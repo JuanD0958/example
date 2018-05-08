@@ -33,11 +33,16 @@ dependencies {
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
+
 jar {
     manifest {
         attributes 'Implementation-Title': 'example',
                    'Implementation-Version': version
     }
+}
+
+plugins {
+  id "org.sonarqube" version "2.6.2"
 }
 
 test {
