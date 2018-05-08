@@ -41,10 +41,6 @@ jar {
     }
 }
 
-plugins {
-  id "org.sonarqube" version "2.6.2"
-}
-
 test {
 	jacoco {
 		append = false
